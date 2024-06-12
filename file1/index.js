@@ -1,4 +1,5 @@
-ReactDOM.render(<ul><li>first</li>
-                    <li>second</li>
-                    <li>third</li>
-                    </ul>,document.getElementById("root"))
+function Mainfunction(){
+    return(<h1>oh yeah monster on the lose </h1>)
+}
+ReactDOM.render(<div><Mainfunction /></div>,document.getElementById("root"))
+``
