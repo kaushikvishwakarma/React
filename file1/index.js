@@ -46,14 +46,61 @@
 
 
 
-function Lolopopo(){
-return (<div>
-    <ol>
-        <li>BLA BLA BLA</li>
-        <li>PHEW PHEW</li>
-        <li>LANDROVER LELE MERA BC</li>
-    </ol>
-</div>
-)    
+// function Lolopopo(){
+// return (<div>
+//     <ol>
+//         <li>BLA BLA BLA</li>
+//         <li>PHEW PHEW</li>
+//         <li>LANDROVER LELE MERA BC</li>
+//     </ol>
+// </div>
+// )    
+// }
+
+function Header() {
+    return (
+        <header>
+            <nav className="nav">
+                <img src="./react-logo.png" className="nav-logo" />
+                <ul className="nav-items">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
+    )
 }
-ReactDOM.render(<Lolopopo />,document.getElementById("root"))
+
+function Footer() {
+    return (
+        <footer >
+            <small className="smallfooter">© 2021 Ziroll development. All rights reserved.</small>
+        </footer>
+    )
+}
+
+function MainContent() {
+    return (
+        <div >
+            <h1 className="smallfooter">Reasons I'm excited to learn React</h1>
+            <ol>
+                <li className="smallfooter">It's a popular library, so I'll be 
+                able to fit in with the cool kids!</li>
+                <li className="smallfooter">I'm more likely to get a job as a developer
+                if I know React</li>
+            </ol>
+        </div>
+    )
+}
+
+function Page() {
+    return (
+        <div>
+            <Header />
+            <MainContent />
+            <Footer />
+        </div>
+    )
+}
+ReactDOM.render(<Page />,document.getElementById("root"))
